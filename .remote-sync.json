@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "13.86.31.132",
+  "port": "22",
+  "target": "C:\\Proyectos\\proyecto-manejo-control-accesos",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "jonathan",
+  "password": "Movius114490688",
+  "watch": [],
+  "transport": "scp"
+}

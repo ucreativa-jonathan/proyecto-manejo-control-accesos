@@ -1,0 +1,2 @@
+dev-centos  ansible_host=40.87.110.148 ansible_conection=ssh ansible_ssh_pass=Movius114490688
+dev-ubuntu ansible_host=40.77.62.99 ansible_conection=ssh ansible_ssh_pass=Movius114490688
