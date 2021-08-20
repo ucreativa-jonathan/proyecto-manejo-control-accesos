@@ -5,7 +5,7 @@
   "uploadOnSave": true,
   "useAtomicWrites": false,
   "deleteLocal": false,
-  "hostname": "13.86.31.132",
+  "hostname": "52.173.21.62",
   "port": "22",
   "target": "C:\\Proyectos\\proyecto-manejo-control-accesos",
   "ignore": [
