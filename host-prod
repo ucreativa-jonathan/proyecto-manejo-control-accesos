@@ -1,2 +1,3 @@
-prod-centos  ansible_host=20.185.217.201 ansible_conection=ssh ansible_ssh_pass=Movius114490688
-prod-ubuntu ansible_host=20.109.97.188 ansible_conection=ssh ansible_ssh_pass=Movius114490688
+[prod]
+prod-centos  ansible_host=20.185.217.201 ansible_conection=ssh ansible_ssh_pass=Movius114490688 ansible_user=jonathan
+prod-ubuntu ansible_host=20.109.97.188 ansible_conection=ssh ansible_ssh_pass=Movius114490688 ansible_user=jonathan

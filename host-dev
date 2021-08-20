@@ -1,2 +1,3 @@
-dev-centos  ansible_host=52.149.159.49 ansible_conection=ssh ansible_ssh_pass=Movius114490688
-dev-ubuntu ansible_host=40.122.239.149 ansible_conection=ssh ansible_ssh_pass=Movius114490688
+[dev]
+dev-centos  ansible_host=52.149.159.49 ansible_conection=ssh ansible_ssh_pass=Movius114490688 ansible_user=jonathan
+dev-ubuntu ansible_host=40.122.239.149 ansible_conection=ssh ansible_ssh_pass=Movius114490688 ansible_user=jonathan
