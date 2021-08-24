@@ -1,0 +1,5 @@
+-
+    name: instalacion de php
+    host: all
+    roles:
+      - PHP

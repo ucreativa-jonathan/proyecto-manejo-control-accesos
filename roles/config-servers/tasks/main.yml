@@ -1,0 +1,39 @@
+- name: instalacion de apache httpd
+  apt:
+    name: apache2
+    state: present
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: activacion de firewall ufw
+  ufw:
+    state: enabled
+    policy: allow
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: agregar puerto 80 a ufw
+  ufw:
+    rule: allow
+    port: 80
+    proto: tcp
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: iniciar firewalld
+  ansible.builtin.command: systemctl start firewalld
+  become: true
+  when: ansible_os_family == "RedHat"
+
+- name: agregar puerto 8080 al firewalld
+  firewalld:
+    port: 8080/tcp
+    permanent: yes
+    state: enabled
+  become: true
+  when: ansible_os_family == "RedHat"
+
+- name:  instalacion openjdk
+  ansible.builtin.command: yum install java-11-openjdk-devel -y
+  become: true
+  when: ansible_os_family == "RedHat"

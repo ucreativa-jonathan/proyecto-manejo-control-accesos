@@ -1,0 +1,5 @@
+-
+    name: configuracoin de server
+    host: all
+    roles:
+      - config-servers
