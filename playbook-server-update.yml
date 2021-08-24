@@ -1,0 +1,5 @@
+-
+    name: actualisacion de servet
+    host: all
+    roles:
+      - server-update

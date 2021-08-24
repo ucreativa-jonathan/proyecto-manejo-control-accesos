@@ -1,0 +1,11 @@
+- name: actualisar servidores
+  apt:
+    update_cache: yes
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: actualisar servidores
+  apt:
+    name: "*"
+    state: latest
+  become: true
